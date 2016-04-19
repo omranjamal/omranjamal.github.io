@@ -1,0 +1,11 @@
+title: OmranJamal
+email: o.jamal97@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Blog & Portfolio of a self taught coder from Dhaka, Bangladesh.
+baseurl: ""
+url: "http://omranjamal.me"
+twitter_username: omranjamal
+facebook_username: omran.jamal
+github_username:  omranjamal
+
+markdown: kramdown

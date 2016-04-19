@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, html {
+    background: #821f96;
+    background: -moz-linear-gradient(-45deg, #821f96 0%, #ff7728 100%);
+    background: -webkit-linear-gradient(-45deg, #821f96 0%,#ff7728 100%);
+    background: linear-gradient(135deg, #821f96 0%,#ff7728 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#821f96', endColorstr='#ff7728',GradientType=1 );
+
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4.2em;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2.4em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 2.1em;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.7em;
+    font-weight: 300;
+}

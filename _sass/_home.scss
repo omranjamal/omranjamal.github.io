@@ -1,0 +1,49 @@
+canvas {
+    position: absolute;
+    top: 2em;
+    left: 0;
+}
+
+.home {
+    color: white;
+    text-align: center;
+    position: relative;
+
+    img {
+        border: 0.4em solid white;
+        border-radius: 100em;
+        box-shadow: -1em 1em rgba(0,0,0,0.2);
+    }
+
+    p {
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 1.4em;
+        font-size: 1.8em;
+        margin-top: 0.5em;
+
+        span {
+            background: rgba(0,0,0,0.7);
+            padding: 0.1em 0.4em;
+        }
+
+        .nerd {
+            color: rgb(255, 153, 115);
+        }
+    }
+
+    .social {
+        margin-top: 0.5em;
+        font-size: 3em;
+
+        a {
+            margin: 0.1em;
+            color: white;
+            transition: color 200ms;
+
+            &:hover {
+                color: rgb(255, 240, 140);
+            }
+        }
+    }
+}
