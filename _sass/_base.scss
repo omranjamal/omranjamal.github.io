@@ -32,11 +32,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4.2em;
+    font-size: 3.2em;
+
+    @include at-tablet {
+        font-size: 4.2em;
+    }
 }
 
 h2 {
     font-size: 2.8em;
+
+    @include at-tablet {
+        font-size: 3.0em;
+    }
+
     font-weight: 600;
 }
 

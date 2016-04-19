@@ -3,7 +3,6 @@
 
     width: 100%;
     height: auto;
-    background: rgba(0,0,0,0.2);
     position: relative;
     margin-bottom: 2em;
 
@@ -14,6 +13,33 @@
         position: relative;
         z-index: 1;
         text-align: center;
+
+        &.open li {
+            display: inline-block;
+
+            @include at-tablet {
+                .burger {
+                    display: none;
+                }
+            }
+        }
+
+        .burger {
+            background: rgba(0,0,0,0.3);
+            width: 3em;
+            margin: auto;
+            margin-top: 0.4em;
+            display: inline-block;
+            font-size: 0.9em;
+
+            a {
+                padding: 0.6em 0.3em;
+            }
+
+            @include at-tablet {
+                display: none !important;
+            }
+        }
 
         ul {
           list-style-type: none;
@@ -31,7 +57,6 @@
 
               &.logo {
                 display: inline-block;
-                width: 10em;
               }
             }
 
@@ -49,7 +74,13 @@
             color: white;
             text-decoration: none;
             display: inline-block;
-            padding: 0.83em;
+            padding: 0.5em;
+            width: 100%;
+
+            @include at-tablet {
+                padding: 0.83em;
+                width: auto;
+            }
         }
 
         .nav-link {
