@@ -53,23 +53,71 @@
 
         pre {
             padding: 1em 1.5em;
-            border: 1px solid black;
-            border-radius: 0.6em;
+            border-radius: 0.4em;
             font-size: 1.1em;
 
-            border-bottom: 0.4em solid black;
+            code {
+              font-family: 'Fira Mono';
+            }
+
+            border-bottom: 0.2em solid rgb(17, 17, 17);
         }
 
         figure.highlight {
             margin: 0;
         }
 
+        & > p {
+          &:first-letter {
+              margin-left: 2em;
+          }
+        }
+
         p {
-            &:first-letter {
-                margin-left: 3em;
+            code {
+              background: rgb(242, 242, 242);
+              padding: 0.2em 0.4em;
+              border: 1px solid rgb(217, 217, 217);
+              border-radius: 0.3em;
             }
         }
+
+        a {
+          color: rgb(15, 169, 255);
+          text-decoration: none;
+
+          &:hover {
+            background: rgb(226, 249, 255);
+          }
+        }
+
+        blockquote {
+          margin: 0;
+          padding: 0.1em 1.3em;
+          border-left: 0.3em solid rgb(84, 199, 255);
+          background: rgb(246, 246, 246);
+          font-size: 1.2em;
+
+          cite {
+            font-size: 0.8em;
+            color: rgb(139, 139, 139);
+          }
+        }
+
+        hr {
+          color: rgb(224, 224, 224);
+          border: 0;
+          border-top: 1px solid rgb(224, 224, 224);
+          outline: 0;
+          margin: 2em;
+        }
     }
+}
+
+.post-icon {
+    display: block;
+    margin: auto;
+    margin-top: 3em;
 }
 
 .post-title {
@@ -78,8 +126,11 @@
     margin: 2em auto;
     max-width: 50rem;
     line-height: 0.9em;
+    margin: 0.5em auto 2em;
 
     em {
-        background: rgba(0,0,0,0.3);
+        background: rgba(0,0,0,0.5);
+        padding: 0 0.2em;
+        font-style: normal;
     }
 }
