@@ -19,11 +19,17 @@ layout: default
 <div class="content-container">
     <div class="content">
         <h2 class="hashed">RECENTLY...</h2>
-        {% for post in site.posts %}
-        <a href="{{ post.url }}">
-            <span class="thumb-title">{{ post.title }}</span>
-        </a>
-        {% endfor %}
+        <section class="posts">
+            {% for post in site.posts limit:3 %}
+            <a href="{{ post.url }}" class="post">
+                <div class="image" style="background-image: url({{ post.image }});"></div>
+                <span class="thumb-title">{{ post.title }}</span>
+                <footer>
+                    <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+                </footer>
+            </a>
+            {% endfor %}
+        </section>
     </div>
 </div>
 <script src="/assets/scripts/silk.js"></script>

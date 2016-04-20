@@ -47,3 +47,52 @@ canvas {
         }
     }
 }
+
+.posts {
+    @include container;
+    width: 100%;
+    position: relative;
+
+    .post {
+        padding: 0.7em;
+        height: 19em;
+        display: block;
+        text-align: center;
+
+        @include span(12);
+
+        @include at-tablet {
+            @include span(6);
+        }
+
+        @include at-desktop {
+            @include span(4);
+        }
+
+        &:hover {
+            background: none;
+        }
+
+        .image {
+            background-size: cover;
+            background-position: center;
+            height: 10em;
+        }
+
+        .thumb-title {
+            display: inline-block;
+            margin-top: 0.5em;
+        }
+
+        footer {
+            .date {
+                display: inline-block;
+                font-size: 0.7em;
+                padding: 0.3em 0.6em;
+                color: rgb(115, 115, 115);
+                // background: rgb(241, 241, 241);
+                margin-top: 0.4em;
+            }
+        }
+    }
+}

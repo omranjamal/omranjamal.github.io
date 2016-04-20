@@ -7,5 +7,6 @@ url: "http://omranjamal.me"
 twitter_username: omranjamal
 facebook_username: omran.jamal
 github_username:  omranjamal
-
+paginate: 20
+permalink: /blog/:title
 markdown: kramdown

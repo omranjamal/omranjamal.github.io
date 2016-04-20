@@ -1,14 +1,19 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <img src="/assets/images/{{ page.icon }}" alt="" class="post-icon" />
+        <h1 class="post-title">
+            <span>{{ page.title_html }}</span>
+        </h1>
+    </header>
+    <div class="content-container">
+        <div class="content">
+            {{ content }}
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
+    </div>
 </article>

@@ -16,8 +16,11 @@
 
         &.open li {
             display: inline-block;
+            background: rgba(0,0,0,0.4);
 
             @include at-tablet {
+                background: none;
+                
                 .burger {
                     display: none;
                 }
